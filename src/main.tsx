@@ -7,6 +7,7 @@ import Header from "./components/header.tsx";
 import Shop from "./Shop.tsx";
 import GamePage from "./GamePage.tsx";
 import Cart from "./Cart.tsx";
+import "./i18n.ts";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },

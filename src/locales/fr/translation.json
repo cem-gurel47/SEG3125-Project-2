@@ -1,0 +1,15 @@
+{
+  "header": {
+    "placeholder": "Langage",
+    "store": "Magasin locations",
+    "customer": "Services clients",
+    "cart": "Panier",
+    "account": "Mon compte",
+    "search": "Rechercher"
+  },
+  "landing": {
+    "title": "Remises spéciales",
+    "subtitle": "Découvrez les réductions spéciales pour la fête des pères",
+    "shop": "Acheter maintenant"
+  }
+}

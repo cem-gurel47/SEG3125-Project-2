@@ -1,0 +1,15 @@
+{
+  "header": {
+    "placeholder": "Language",
+    "store": "Store Locator",
+    "customer": "Customer Service",
+    "cart": "Cart",
+    "account": "Account",
+    "search": "Search"
+  },
+  "landing": {
+    "title": "Special Discounts",
+    "subtitle": "Check out special discounts for the Father’s Day",
+    "shop": "Shop Now"
+  }
+}

@@ -6,6 +6,7 @@ import PCImage from "./assets/featureblock_pc.png";
 import PS5Image from "./assets/featureblock_ps5.png";
 import XboxImage from "./assets/featureblock_xboxseriesx.png";
 import SwitchImage from "./assets/featureblock_switch.png";
+import { useTranslation } from "react-i18next";
 
 const FEATURE_BLOCKS = [
   {
@@ -36,36 +37,37 @@ const FEATURE_BLOCKS = [
 ];
 
 function App() {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen">
       <Carousel>
         <div className="relative">
           <img src={CarouselImage} />
           <h2 className="absolute top-20 left-11 text-white font-extrabold text-xl">
-            Special Discounts
+            {t("landing.title")}
           </h2>
           <p className="absolute top-28 left-11 text-white">
-            Check out special discounts for the Father’s Day
+            {t("landing.subtitle")}
           </p>
 
           <a href="/shop">
             <button className="absolute bottom-36 left-11 bg-red-700 text-white font-bold px-4 py-2 rounded-full">
-              SHOP NOW
+              {t("landing.shop")}
             </button>
           </a>
         </div>
         <div className="relative">
           <img src={CarouselImage} />
           <h2 className="absolute top-20 left-11 text-white font-extrabold text-xl">
-            Special Discounts 2
+            {t("landing.title")} 2
           </h2>
           <p className="absolute top-28 left-11 text-white">
-            Check out special discounts for the Father’s Day 2
+            {t("landing.subtitle")} 2
           </p>
 
           <a href="/shop">
             <button className="absolute bottom-36 left-11 bg-red-700 text-white font-bold px-4 py-2 rounded-full">
-              SHOP NOW
+              {t("landing.shop")}
             </button>
           </a>
         </div>
@@ -75,6 +77,7 @@ function App() {
           <a
             className="flex flex-col items-center justify-center w-1/5 hover:text-red-700"
             href="/shop"
+            key={block.title}
           >
             <img src={block.image} className="rounded-2xl" />
             <p className="text-center mt-4">{block.title}</p>
